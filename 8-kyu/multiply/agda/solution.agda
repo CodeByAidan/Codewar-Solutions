@@ -3,7 +3,7 @@ module Solution where
 
 open import Data.Nat
 
-multiply : â„• â†’ â„• â†’ â„•
+multiply : ℕ → ℕ → ℕ
 multiply = _*_
 --because fn is the multiplier
 --set it to * and there ya go

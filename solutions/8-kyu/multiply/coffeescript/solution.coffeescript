@@ -1,4 +1,0 @@
-a = 2
-b = 3
-multiply = (a, b) -> a * b
-#multipling using multiply = a, b converts to -> a * b

@@ -1,2 +1,2 @@
-: solution ( n1 n2 â€” prod ) * ;
+: solution ( n1 n2 — prod ) * ;
  ( x -- x x) 

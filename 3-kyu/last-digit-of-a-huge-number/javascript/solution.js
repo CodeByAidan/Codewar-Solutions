@@ -2,13 +2,13 @@
 // because 3 ^ (4 ^ 2) = 3 ^ 16 = 43046721.
 
 function trueMod(a, n, m) {
-//   return as.reduceRight(function(pow, base, index, array) {
-//     return pow === 0 ? 1 : ( +pow == 1 ? base : Math.pow(base % 100, +pow % 4 + 4));
-//   }, 1) % 10;
-    return Math.round( (a % m) * Math.pow( (a % m), (n + 3) % 4 ) ) % m;
+    //   return as.reduceRight(function(pow, base, index, array) {
+    //     return pow === 0 ? 1 : ( +pow == 1 ? base : Math.pow(base % 100, +pow % 4 + 4));
+    //   }, 1) % 10;
+    return Math.round((a % m) * Math.pow((a % m), (n + 3) % 4)) % m;
 }
 
-function lastDigit(as){
+function lastDigit(as) {
     if (as.length == 0) return 1;
     let rightIsZero = false;
     let rightBiggerThan2 = false;
@@ -20,8 +20,8 @@ function lastDigit(as){
             rightIsZero = false;
             rightBiggerThan2 = false;
         } else {
-            rightMod4 =(rightBiggerThan2 && (as[i] % 4 === 2)) ? 0 : trueMod(as[i], rightMod4, 4);
-             rightIsZero = as[i] === 0;
+            rightMod4 = (rightBiggerThan2 && (as[i] % 4 === 2)) ? 0 : trueMod(as[i], rightMod4, 4);
+            rightIsZero = as[i] === 0;
             rightBiggerThan2 = !rightIsZero && !(as[i] === 1)
         }
     }

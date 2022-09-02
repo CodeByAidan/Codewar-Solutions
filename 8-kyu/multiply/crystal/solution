@@ -1,5 +1,0 @@
-def multiply(x : Number,  y : Number) : Number
-  x * y
-end
-
-# gary come home 

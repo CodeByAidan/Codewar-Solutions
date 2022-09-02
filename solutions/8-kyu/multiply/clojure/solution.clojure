@@ -1,6 +1,0 @@
-(ns multiply.bug.fix)
-
-(defn multiply 
-  [& args] (apply * args))
-
-;(defn multiply [a b] clojure uses * num1 and num2 ez

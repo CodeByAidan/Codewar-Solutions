@@ -1,1 +1,0 @@
-module Solution; export multiply; multiply(a::Int, b::Int) = a * b; end

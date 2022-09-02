@@ -1,4 +1,0 @@
-let rec multiply a b = if b < 1 then 0 else if b > 0 then a + multiply a (b - 1) else multiply a (b + 1) - a
-
-
-// i love coding on https://www.codewars.com/kata/50654ddff44f800200000004/train/fsharp :skull:
