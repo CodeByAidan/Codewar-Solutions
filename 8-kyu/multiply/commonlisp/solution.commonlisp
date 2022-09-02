@@ -1,0 +1,10 @@
+(defpackage #:challenge/solution
+  (:use #:cl)
+  (:export #:multiply))
+(in-package #:challenge/solution)
+;  (a b) (* a b)
+;simply just adding reducers :D
+(defun multiply 
+  (&rest ns) (reduce #'* ns)
+
+)

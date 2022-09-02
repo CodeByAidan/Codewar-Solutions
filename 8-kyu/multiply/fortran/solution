@@ -1,0 +1,13 @@
+module Solution
+  implicit none
+contains
+  function multiply(a, b)
+    integer :: multiply
+    integer :: a
+    integer :: b
+    multiply = a * b
+    return
+  end function multiply
+end module Solution
+
+! fuck math

@@ -1,0 +1,2 @@
+: solution ( n1 n2 â€” prod ) * ;
+ ( x -- x x) 

@@ -1,0 +1,10 @@
+-module(bug_fix).
+-export([multiply/2]).
+
+-spec multiply(integer(), integer()) -> integer().
+multiply(A, B) -> multiply(A, B, 0).
+
+multiply(A, 0, Acc) -> Acc;
+multiply(A, B, Acc) -> multiply(A, B-1, A + Acc).
+
+% erlang that one language you will never hear again :D

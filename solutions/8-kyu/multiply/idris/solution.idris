@@ -1,0 +1,9 @@
+module Multiply
+
+%access export
+%default total
+
+multiply : Int -> Int -> Int
+multiply a b = (*) a b
+
+-- 1+1+1+1+1+1+1+1=12 thank you for sharing :D
