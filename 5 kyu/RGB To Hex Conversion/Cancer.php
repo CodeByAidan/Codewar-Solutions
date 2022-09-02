@@ -44,7 +44,7 @@ class Color
 
         $blue = dechex($color->blue);
         if (strlen($blue) < 2) $blue = '0' . $blue;
-
+     
         return '#' . $red . $green . $blue;
     }
 
